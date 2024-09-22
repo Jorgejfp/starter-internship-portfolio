@@ -1,0 +1,87 @@
+/* Configuración básica para prevenir desbordamientos */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevenir desbordamiento horizontal y vertical */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+
+/* Header fijo en la parte superior */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 60px; /* Ajustamos la altura del header */
+}
+
+/* Footer fijo en la parte inferior */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 100px; /* Altura del footer ajustada */
+    text-align: center;
+    color: white;
+    line-height: 30px; /* Asegura que el texto esté centrado verticalmente */
+}
+
+/* Fondo con el GIF ajustado al ancho y evitando desbordes */
+.content {
+    flex: 1;
+    position: relative; /* Para poder agregar la capa de superposición */
+    background: url('../img/ondas-animadas.gif') no-repeat center center fixed;
+    background-size: 100% 83%; /* El GIF se ajustará dentro del contenedor sin desbordar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Espacio para el header */
+    padding-bottom: 60px; /* Espacio para el footer */
+    box-sizing: border-box; /* Prevenir desbordamiento por padding */
+    height: calc(100vh - 120px); /* Ajustar el contenido para que no exceda el espacio entre header y footer */
+}
+
+/* Capa de superposición para transparencia */
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Capa de superposición con un 20% de transparencia */
+    z-index: 1; /* Colocamos la capa debajo del contenido */
+}
+
+/* Sección principal */
+#home {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2; /* Colocamos el contenido por encima de la capa de superposición */
+}
+
+.home-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 1rem;
+}

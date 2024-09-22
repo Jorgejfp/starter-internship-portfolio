@@ -1,0 +1,49 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Estilos para la tabla estilo Gantt */
+.gantt-table {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.gantt-table th, .gantt-table td {
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para las celdas de periodo activo */
+.active-period {
+    background-color: #007bff;
+    color: white;
+    position: relative;
+}
+
+.active-period .event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active-period .event-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Ajuste para la línea de tiempo */
+.gantt-table th {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0;
+    border-top: 5px solid #fff;
+}

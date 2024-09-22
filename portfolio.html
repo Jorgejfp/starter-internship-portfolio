@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portefeuille - Jorge Flores Perez">
+    <title>Portefeuille - Jorge Flores</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Great Vibes', cursive;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 700;
+        }
+        footer {
+            margin-top: 50px;
+        }
+        .card-title {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Jorge Flores</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portefeuille</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container my-5" data-aos="fade-left">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2 class="text-center">Portefeuille</h2>
+                <div class="row">
+                    <!-- Proyecto 1 -->
+                    <div class="col-md-6 mb-4" data-aos="zoom-in">
+                        <div class="card">
+                            <img src="img/project1.jpg" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 1</h5>
+                                <p class="card-text">Description du projet.</p>
+                                <a href="project1.html" class="btn btn-dark">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col-md-6 mb-4" data-aos="zoom-in">
+                        <div class="card">
+                            <img src="img/project2.jpg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 2</h5>
+                                <p class="card-text">Description du projet.</p>
+                                <a href="project2.html" class="btn btn-dark">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Añade más proyectos según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/jjfp" class="text-white mx-2">LinkedIn</a>
+            <a href="https://github.com/jorgejfp" class="text-white mx-2">GitHub</a>
+            <a href="https://orcid.org/0000-0002-1140-8074" class="text-white mx-2">ORCID</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS for Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

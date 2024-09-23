@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+
+/* Header fijo en la parte superior */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 60px;
+}
+
+/* Ajustamos el margen del contenido para que no se superponga con el header */
+main {
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 100px; /* Espacio para el footer */
+    min-height: calc(100vh - 160px); /* Ajustamos para que el contenido llene el espacio hasta el footer */
+}
+
+/* Footer fijo en la parte inferior */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 100px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+
+/* Estilo del contenido principal */
+.content {
+    z-index: 1;
+    position: relative;
+    background: url('../img/ondas-animadas.gif') no-repeat center bottom fixed;
+    background-size: cover; /* El fondo cubre todo el espacio visible */
+    min-height: calc(100vh - 160px); /* Asegura que el contenido y el fondo cubran el espacio visible */
+}
+
+/* Estilo para los proyectos */
+.card {
+    background-color: #222;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #ccc;
+}
+
+/* Estilo de los botones */
+.btn-outline-light {
+    margin-top: 20px;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsividad */
+@media only screen and (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}

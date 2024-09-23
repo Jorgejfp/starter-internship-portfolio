@@ -3,46 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétences - Jorge Flores Perez</title>
+    <meta name="description" content="Compétences de Jorge Flores Perez">
+    <title>Compétences - Jorge Flores</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/skills.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Retour à l'accueil</a>
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/home_ico.png" alt="Home" class="rounded-circle" width="50" height="50">
+                    <span style="font-family: 'Great Vibes', cursive; font-size: 1.5rem; color: white;">.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="formation.html" data-bs-toggle="tooltip" title="Formation">
+                                <img src="img/Formation_ico.png" alt="Formation" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html" data-bs-toggle="tooltip" title="Expérience">
+                                <img src="img/Experience_ico.png" alt="Expérience" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" data-bs-toggle="tooltip" title="Portefeuille">
+                                <img src="img/Portafolio_ico.png" alt="Portefeuille" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-bs-toggle="tooltip" title="Contact">
+                                <img src="img/Contact_ico.png" alt="Contact" width="50" height="50">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
+    <!-- Main content -->
     <main class="content">
-        <section class="container">
-            <h1 class="my-4 text-white">Mes Compétences</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Compétences Techniques</h2>
-                    <ul>
-                        <li>Microsoft Office Suite, Html, CSS, JavaScript</li>
-                        <li>C#, Python, PHP</li>
-                        <li>SQL, AJAX API</li>
-                        <li>Scrum, Power BI</li>
-                    </ul>
+        <section id="competences" class="container my-5 text-white">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center">Compétences</h2>
+                    <p class="text-center">
+                        Voici un aperçu de mes compétences clés, couvrant des domaines tels que l'analyse commerciale, la programmation et la gestion stratégique.
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <h2>Expérience Professionnelle</h2>
-                    <p>Consultant en comptabilité financière (2013 – Présent)</p>
-                    <p>Comptable Général Corporatif - Grupo Gremcor (2022 – 2023)</p>
-                    <!-- Add more experience details here -->
+            </div>
+
+            <!-- Détails des compétences -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="list-group">
+                        <!-- Compétence en Business Analytics -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <i class="fas fa-chart-line fa-2x me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Business Analytics</h5>
+                                <p class="mb-1">Compétences dans l'analyse de données commerciales, la création de tableaux de bord, et l'utilisation d'outils tels que Excel, Power BI, et Tableau pour la prise de décisions stratégiques.</p>
+                                        <p class="text-white">Microsoft Office Suite</p>
+                                        <span class="badge bg-primary">Word</span>
+                                        <span class="badge bg-success">Excel</span>
+                                        <span class="badge bg-danger">PowerPoint</span>
+                                        <span class="badge bg-danger">SPSS</span>
+                            </div>
+                        </div>
+
+                        <!-- Compétence en Programmation -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <i class="fas fa-code fa-2x me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Programmation</h5>
+                                <p class="mb-1">Expérience dans plusieurs langages de programmation, y compris Python, JavaScript, HTML/CSS, SQL, et la création d'applications Web. Expertise en développement et analyse d'algorithmes.</p>                                
+                                    <p class="text-white">Programming Languages 
+                                        <span class="badge bg-warning text-dark">HTML5</span>
+                                        <span class="badge bg-info text-dark">CSS3</span>
+                                        <span class="badge bg-dark">JavaScript</span>
+                                        <span class="badge bg-secondary">C#</span>
+                                        <span class="badge bg-purple">PHP</span>
+                                        <span class="badge bg-primary">Python</span>
+                                        <span class="badge bg-blue">Java</span></p>
+                                    <p class="text-white">Development Tools 
+                                        <span class="badge bg-dark">.NET</span>
+                                        <span class="badge bg-info text-dark">AJAX</span>
+                                        <span class="badge bg-teal">React</span>
+                                        <span class="badge bg-light text-dark">Trello</span>
+                                        <span class="badge bg-success">Scrum</span>
+                                        <span class="badge bg-purple">User Stories</span></p>
+                                    <p class="text-white">Databases
+                                        <span class="badge bg-secondary">SQL</span>
+                                        <span class="badge bg-light text-dark">MySQL</span></p>
+                                    <p class="text-white">Data Analysis
+                                        <span class="badge bg-warning text-dark">Power BI </span>
+                                        <span class="badge bg-info text-dark">SPSS Amos  </span>
+                                        <span class="badge bg-orange">Business Analysis  </span></p>
+                            </div>
+                        </div>
+
+                        <!-- Compétence en Gestion Financière -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <i class="fas fa-calculator fa-2x me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Gestion Financière</h5>
+                                    <p class="mb-1">Expertise en gestion des flux financiers, planification budgétaire, et analyse des états financiers. Compétences solides en comptabilité d'entreprise et gestion des risques.</p>
+                                    <p class="text-white">Enterprise Systems
+                                    <span class="badge bg-primary">SAP B1</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Compétence en Audit et Contrôle Interne -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <i class="fas fa-search fa-2x me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Audit et Contrôle Interne</h5>
+                                <p class="mb-1">Expérience en audit interne et externe, mise en œuvre de systèmes de contrôle interne et révision des processus financiers et administratifs pour assurer la conformité.</p>
+                                <p class="text-white">Other Skills
+                                    <span class="badge bg-success">VBA</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Compétence en Gestion de Projets -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <i class="fas fa-project-diagram fa-2x me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Gestion de Projets</h5>
+                                <p class="mb-1">Capacité à diriger et coordonner des projets complexes, de la phase de planification à l'exécution, en assurant une livraison dans les délais et le respect des budgets.</p>
+                                <p class="text-white">Gestión de Projects
+                                    <span class="badge bg-primary">Microsoft Project</span>
+                                    <span class="badge bg-primary">Microsoft Visio</span>
+                                    <span class="badge bg-primary">Trello</span>
+                                    <span class="badge bg-primary">Scrum</span>
+                                    <span class="badge bg-primary">Agile</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boutons de navigation -->
+            <div class="row justify-content-between mt-5">
+                <div class="col-md-3">
+                    <a href="experience.html" class="btn btn-outline-light w-100">
+                        <i class="fas fa-arrow-left"></i> Retour
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="portfolio.html" class="btn btn-outline-light w-100">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer bg-dark text-white py-3 text-center">
-        <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/jjfp" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jorgejfp" class="text-white mx-2"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0000-0002-1140-8074" class="text-white mx-2"><i class="fab fa-orcid"></i></a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,38 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefeuille - Jorge Flores Perez</title>
+    <meta name="description" content="Portefeuille de Jorge Flores Perez">
+    <title>Portefeuille - Jorge Flores</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Retour à l'accueil</a>
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/home_ico.png" alt="Home" class="rounded-circle" width="50" height="50">
+                    <span style="font-family: 'Great Vibes', cursive; font-size: 1.5rem; color: white;">.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="formation.html" data-bs-toggle="tooltip" title="Formation">
+                                <img src="img/Formation_ico.png" alt="Formation" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html" data-bs-toggle="tooltip" title="Expérience">
+                                <img src="img/Experience_ico.png" alt="Expérience" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html" data-bs-toggle="tooltip" title="Compétences">
+                                <img src="img/Skills_ico.png" alt="Compétences" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-bs-toggle="tooltip" title="Contact">
+                                <img src="img/Contact_ico.png" alt="Contact" width="50" height="50">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
+    <!-- Main content -->
     <main class="content">
-        <section class="container">
-            <h1 class="my-4 text-white">Mes Projets</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Project 1</h2>
-                    <p>Description of project 1</p>
-                    <img src="img/project1.png" alt="Project 1 Screenshot" class="img-fluid">
-                    <a href="https://github.com/jorgejfp/project1" class="btn btn-outline-light mt-2">Voir sur GitHub</a>
+        <section id="portfolio" class="container my-5 text-white">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center">Portefeuille de Projets</h2>
+                    <p class="text-center">
+                        Voici quelques projets sur lesquels j'ai travaillé, mettant en avant mes compétences en analyse, programmation et gestion.
+                    </p>
                 </div>
-                <!-- Add more project blocks here -->
+            </div>
+
+            <!-- Projects -->
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="img/proyecto1.jpg" class="card-img-top" alt="Projet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet 1: Analyse de Données</h5>
+                            <p class="card-text">Ce projet implique la création de tableaux de bord interactifs pour l'analyse des ventes et des performances financières.</p>
+                            <a href="#" class="btn btn-outline-light">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="img/proyecto2.jpg" class="card-img-top" alt="Projet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet 2: Application Web</h5>
+                            <p class="card-text">Développement d'une application Web avec des fonctionnalités front-end et back-end, utilisant React, Node.js et MySQL.</p>
+                            <a href="#" class="btn btn-outline-light">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="img/proyecto3.jpg" class="card-img-top" alt="Projet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet 3: Automatisation avec VBA</h5>
+                            <p class="card-text">Automatisation de tâches comptables répétitives avec des macros VBA pour Excel, augmentant l'efficacité des processus.</p>
+                            <a href="#" class="btn btn-outline-light">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Añadir más proyectos según sea necesario -->
             </div>
         </section>
     </main>
 
-    <footer class="footer bg-dark text-white py-3 text-center">
-        <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/jjfp" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jorgejfp" class="text-white mx-2"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0000-0002-1140-8074" class="text-white mx-2"><i class="fab fa-orcid"></i></a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

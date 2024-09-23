@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+
+/* Header fijo en la parte superior */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 60px; /* Ajustamos la altura del header */
+}
+
+/* Ajustamos el margen del contenido para que no se superponga con el header */
+main {
+    margin-top: 80px; /* Espacio para evitar que el contenido se superponga con el header */
+    padding-top: 20px; /* Espacio adicional debajo del header */
+    padding-bottom: 100px; /* Espacio para el footer */
+}
+
+/* Footer fijo en la parte inferior */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 100px; /* Altura del footer ajustada */
+    text-align: center;
+    color: white;
+    line-height: 30px; /* Centrado verticalmente */
+}
+
+/* Estilo del contenido principal */
+.content {
+    z-index: 1; /* Para que el contenido esté debajo del header y footer */
+    position: relative;
+    background: url('../img/ondas-animadas.gif') no-repeat center center fixed;
+    background-size: 100% 83%;
+}
+
+/* Logos y textos de las competencias */
+.list-group-item img {
+    max-width: 80px;
+}
+
+.list-group-item h5 {
+    font-size: 1.2rem;
+}
+
+.list-group-item p {
+    color: #ccc;
+}
+
+/* Añadir margen a los badges para espaciarlos */
+.badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Estilo de los botones de navegación */
+.btn-outline-light {
+    margin-top: 20px;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Asegurar responsividad */
+@media only screen and (max-width: 768px) {
+    .badge {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

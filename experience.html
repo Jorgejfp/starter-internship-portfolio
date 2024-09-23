@@ -3,98 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience - Jorge Flores Perez">
-    <title>Experience - Jorge Flores</title>
+    <meta name="description" content="Expérience de Jorge Flores Perez">
+    <title>Expérience - Jorge Flores</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- AOS Library for Animations -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-        h1, h2 {
-            font-family: 'Great Vibes', cursive;
-        }
-        .navbar-nav .nav-link {
-            font-weight: 700;
-        }
-        footer {
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/experience.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Jorge Flores</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">À Propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portefeuille</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/home_ico.png" alt="Home" class="rounded-circle" width="50" height="50">
+                    <span style="font-family: 'Great Vibes', cursive; font-size: 1.5rem; color: white;">.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="formation.html" data-bs-toggle="tooltip" title="Formation">
+                                <img src="img/Formation_ico.png" alt="Formation" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html" data-bs-toggle="tooltip" title="Compétences">
+                                <img src="img/Skills_ico.png" alt="Compétences" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" data-bs-toggle="tooltip" title="Portefeuille">
+                                <img src="img/Portafolio_ico.png" alt="Portefeuille" width="50" height="50">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-bs-toggle="tooltip" title="Contact">
+                                <img src="img/Contact_ico.png" alt="Contact" width="50" height="50">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Experience Section -->
-    <section id="experience" class="container my-5" data-aos="fade-right">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <h2 class="text-center">Experience</h2>
-                <p class="text-center">
-                    Mon expérience professionnelle et projets réalisés.
-                </p>
-                <!-- Añade más contenido según sea necesario -->
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <strong>Entreprise XYZ</strong> - Stagiaire Développeur (2023 - 2024)
-                        <br>
-                        - Développement d'applications web
-                        <br>
-                        - Collaboration avec l'équipe de conception
-                    </li>
-                    <!-- Añade más ítems si es necesario -->
-                </ul>
+    <!-- Main content -->
+    <main class="content">
+        <section id="experience" class="container my-5 text-white">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center">Expérience Professionnelle</h2>
+                    <p class="text-center">
+                        Voici un aperçu détaillé de mon expérience professionnelle, mettant l'accent sur l'analyse commerciale, la gestion comptable et la programmation dans divers secteurs.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+
+            <!-- Détails de l'expérience -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="list-group">
+                        <!-- GRUPO GREMCOR -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/gremcor_logo.png" alt="GRUPO GREMCOR" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Comptable Général Corporatif - GRUPO GREMCOR</h5>
+                                <p class="mb-1">Avril 2022 - Avril 2023</p>
+                                <small>Responsable de la consolidation et de l'évaluation financière du groupe, ainsi que de l'amélioration des systèmes et du contrôle interne. Encadrement de 23 personnes réparties en 4 équipes.</small>
+                            </div>
+                        </div>
+
+                        <!-- JJFP Strategic Business Consultant -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/jjfp_logo.png" alt="JJFP Consultant" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Consultant Stratégique - JJFP Strategic Business Consultant</h5>
+                                <p class="mb-1">Octobre 2013 – Actuellement</p>
+                                <small>Conseil en finance, développement stratégique et analytique d'affaires, incluant des projets tels que la planification pour "GEDEK S.A.C." et "Coopecan Pérou". Développement de systèmes de coûts pour Ladrillera El Diamante S.A.</small>
+                            </div>
+                        </div>
+
+                        <!-- GEDEK S.A.C. -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/gedek_logo.png" alt="GEDEK S.A.C." width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Directeur Général - GEDEK S.A.C.</h5>
+                                <p class="mb-1">Juin 2009 – Avril 2014</p>
+                                <small>Gestion des activités commerciales et financières, menant à un positionnement fort de l'entreprise sur le marché.</small>
+                            </div>
+                        </div>
+
+                        <!-- Groupe Puyo -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/puyo_logo.png" alt="Groupe Puyo" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Consultant Administratif et Financier - Groupe Puyo</h5>
+                                <p class="mb-1">Août 2015 – Avril 2017</p>
+                                <small>Responsable de la mise en place de systèmes comptables et financiers pour plusieurs entreprises du groupe, avec un focus sur le contrôle financier interne.</small>
+                            </div>
+                        </div>
+
+                        <!-- Expérience académique -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/university_logo.png" alt="Universités" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Enseignant-Chercheur - Diverses Universités</h5>
+                                <p class="mb-1">2014 – Actuellement</p>
+                                <small>Responsable de cours dans les domaines de la finance, des coûts, de l'audit et de la gestion stratégique dans plusieurs universités renommées du Pérou, notamment l'Université Technologique du Pérou et l'Université Catholique San Pablo.</small>
+                            </div>
+                        </div>
+
+                        <!-- EDPYME Nueva Visión -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/vision_logo.png" alt="EDPYME Nueva Visión" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Comptable Général - EDPYME Nueva Visión</h5>
+                                <p class="mb-1">Octobre 2012 - Octobre 2013</p>
+                                <small>Responsable de la gestion des états financiers et de la mise en œuvre de systèmes administratifs automatisés.</small>
+                            </div>
+                        </div>
+
+                        <!-- G&N Trading SCRL -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/gn_logo.png" alt="G&N Trading SCRL" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Comptable Général - G&N Trading SCRL</h5>
+                                <p class="mb-1">Juin 2003 - Mars 2011</p>
+                                <small>Gestion des états financiers et coordination avec les auditeurs externes pour assurer la conformité et la précision des rapports.</small>
+                            </div>
+                        </div>
+
+                        <!-- Caja Rural de Ahorro y Crédito Quillabamba S.A. -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/quillabamba_logo.png" alt="Caja Quillabamba" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Assistant Financier - Caja Rural de Ahorro y Crédito Quillabamba</h5>
+                                <p class="mb-1">Mars 2008 - Janvier 2009</p>
+                                <small>Études de rentabilité des financements et élaboration de rapports pour la gestion de la trésorerie et des fonds disponibles.</small>
+                            </div>
+                        </div>
+
+                        <!-- Caja Rural de Ahorro y Crédito Cajasur -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/Cajasur_logo.gif" alt="Caja Cajasur" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Fonctionnaire Comptable - Caja Rural de Ahorro y Crédito Cajasur</h5>
+                                <p class="mb-1">Avril 2005 - Mars 2008</p>
+                                <small>Suivi des portefeuilles de crédits et responsable adjoint des états financiers. Implémentation du système SARABANK pour la gestion comptable.</small>
+                            </div>
+                        </div>
+
+                        <!-- Caja Municipal de Arequipa -->
+                        <div class="list-group-item bg-dark text-white mb-3 d-flex align-items-center">
+                            <img src="img/arequipa_logo.png" alt="Caja Municipal de Arequipa" width="80" class="me-3">
+                            <div>
+                                <h5 class="mb-1">Évaluateur de Crédit - Caja Municipal de Arequipa</h5>
+                                <p class="mb-1">Octobre 2004 - Janvier 2005</p>
+                                <small>Évaluation de dossiers de crédits pour garantir la conformité réglementaire, suivi des portefeuilles clients.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boutons de navigation -->
+            <div class="row justify-content-between mt-5">
+                <div class="col-md-3">
+                    <a href="formation.html" class="btn btn-outline-light w-100">
+                        <i class="fas fa-arrow-left"></i> Retour
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="skills.html" class="btn btn-outline-light w-100">
+                        Continuer <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
-        <div>
-            <a href="https://www.linkedin.com/in/jjfp" class="text-white mx-2">LinkedIn</a>
-            <a href="https://github.com/jorgejfp" class="text-white mx-2">GitHub</a>
-            <a href="https://orcid.org/0000-0002-1140-8074" class="text-white mx-2">ORCID</a>
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/jjfp" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jorgejfp" class="text-white mx-2"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0000-0002-1140-8074" class="text-white mx-2"><i class="fab fa-orcid"></i></a>
+            </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS for Animations -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>

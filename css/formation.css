@@ -1,49 +1,67 @@
-/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
 }
 
-/* Estilos para la tabla estilo Gantt */
-.gantt-table {
+/* Header fijo en la parte superior */
+header {
     width: 100%;
-    table-layout: fixed;
-    text-align: center;
-    font-size: 0.9rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 60px; /* Ajustamos la altura del header */
 }
 
-.gantt-table th, .gantt-table td {
-    vertical-align: middle;
-    border: 1px solid #ccc;
+/* Ajustamos el margen del contenido para que no se superponga con el header */
+main {
+    margin-top: 60px; /* Este espacio debe coincidir con la altura del header */
 }
 
-/* Estilo para las celdas de periodo activo */
-.active-period {
-    background-color: #007bff;
-    color: white;
-    position: relative;
-}
-
-.active-period .event-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.active-period .event-logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 5px;
-}
-
-/* Ajuste para la línea de tiempo */
-.gantt-table th {
-    background-color: #343a40;
-    color: white;
-}
-
-/* Footer */
+/* Footer fijo en la parte inferior */
 footer {
-    padding: 1rem 0;
-    border-top: 5px solid #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 100px; /* Altura del footer ajustada */
+    text-align: center;
+    color: white;
+    line-height: 30px; /* Centrado verticalmente */
+}
+
+/* Estilo del contenido principal */
+.content {
+    padding-bottom: 100px; /* Añadir espacio para el footer */
+    box-sizing: border-box;
+    background: url('../img/ondas-animadas.gif') no-repeat center center fixed;
+    background-size: 100% 83%;
+}
+
+/* Ajustes para el contenido de la lista */
+.list-group-item {
+    padding: 20px;
+    background-color: #222; /* Fondo oscuro para los elementos de la lista */
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Ajuste de los botones de navegación */
+.btn-outline-light {
+    margin-top: 20px;
+}
+
+/* Animación hover para botones de navegación */
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }

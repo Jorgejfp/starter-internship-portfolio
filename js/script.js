@@ -1,4 +1,3 @@
-// Función para actualizar el menú lateral dependiendo de la página activa
 function updateSideMenu(activePage) {
     const sideMenu = document.getElementById('sideMenu');
     const menuItems = [
@@ -8,20 +7,21 @@ function updateSideMenu(activePage) {
         { title: 'Contact', link: 'contact.html' }
     ];
 
-    // Limpiamos el menú lateral
-    sideMenu.innerHTML = '';
+    // Crear un fragmento de documento para agregar los elementos sin reflow inmediato
+    const fragment = document.createDocumentFragment();
 
-    // Agregamos los elementos que no son la página activa
+    // Agregar los elementos que no son la página activa al fragmento
     menuItems.forEach(item => {
         if (item.title.toLowerCase() !== activePage.toLowerCase()) {
             const link = document.createElement('a');
             link.href = item.link;
             link.textContent = item.title;
             link.className = 'list-group-item list-group-item-action';
-            sideMenu.appendChild(link);
+            fragment.appendChild(link);
         }
     });
-}
 
-// Llamamos a la función con la página activa (ejemplo: 'Education')
-updateSideMenu('Education'); // Cambia 'Education' por la página activa
+    // Limpiar el menú lateral y agregar todos los nuevos elementos de una sola vez
+    sideMenu.innerHTML = '';
+    sideMenu.appendChild(fragment);
+}

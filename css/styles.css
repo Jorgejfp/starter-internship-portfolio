@@ -3,7 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Prevenir desbordamiento horizontal y vertical */
+    overflow-x: hidden; /* Prevenir desbordamiento horizontal y vertical */
+    overflow-y: auto;
 }
 
 body {
@@ -36,6 +37,16 @@ footer {
     line-height: 30px; /* Asegura que el texto esté centrado verticalmente */
 }
 
+.footer a i {
+    font-size: 1.5rem; /* Ajusta el tamaño del ícono */
+    transition: color 0.3s ease;
+}
+
+.footer a i:hover {
+    color: #0a66c2; /* Cambia el color del ícono cuando se pasa el mouse por encima */
+}
+
+
 /* Fondo con el GIF ajustado al ancho y evitando desbordes */
 .content {
     flex: 1;
@@ -46,9 +57,10 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 60px; /* Espacio para el header */
-    padding-bottom: 60px; /* Espacio para el footer */
+    padding-bottom: 100px; /* Espacio para el footer */
     box-sizing: border-box; /* Prevenir desbordamiento por padding */
     height: calc(100vh - 120px); /* Ajustar el contenido para que no exceda el espacio entre header y footer */
+    min-height: 100vh;
 }
 
 /* Capa de superposición para transparencia */
@@ -60,7 +72,7 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); /* Capa de superposición con un 20% de transparencia */
-    z-index: 1; /* Colocamos la capa debajo del contenido */
+    z-index: 0; /* Colocamos la capa debajo del contenido */
 }
 
 /* Sección principal */
@@ -84,4 +96,35 @@ footer {
     font-size: 1.2rem;
     color: #fff;
     margin-top: 1rem;
+}
+
+/* Ajuste para tarjetas y botones */
+.card {
+    position: relative;
+    z-index: 2; /* Aseguramos que las tarjetas estén por encima de cualquier superposición */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto de hover: levanta la tarjeta y añade sombra */
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Añade una sombra más pronunciada */
+}
+
+
+/* Ajuste de contenido en las tarjetas */
+.card-body {
+    position: relative;
+    z-index: 3; /* Aseguramos que el contenido de las tarjetas sea accesible */
+}
+
+/* Botones dentro de las tarjetas */
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Animación del botón en hover */
+.btn:hover {
+    background-color: #fff;
+    color: #000;
 }

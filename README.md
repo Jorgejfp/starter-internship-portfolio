@@ -52,12 +52,12 @@ For this project, students will create a professional portfolio website showcasi
 
 | **Criteria**                               | **Description**                                                                                       | **Points** |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------|------------|
-| **Homepage Design and Usability**           | The homepage is visually appealing, informative, and user-friendly. Navigation is clear and intuitive. | 15         |
-| **Project Pages**                           | Each project is well-documented with descriptions, media, and links. Dedicated pages for each project. | 15         |
+| **Homepage Design and Usability**           | The homepage is visually appealing, informative, and user-friendly. Navigation is clear and intuitive. | 20         |
+| **Project Pages**                           | Each project is well-documented with descriptions, media, and links. Dedicated pages for each project. | 20         |
 | **Skills/Experience Page**                  | Skills and experience are well-organized, relevant, and up-to-date. Professional presentation.          | 10         |
 | **Contact Page and Form Validation**        | Functional contact form with proper validation and additional contact options (social media links).     | 10         |
-| **API Integration**                         | External API integration is successfully implemented and data is processed and displayed meaningfully. | 15         |
-| **API Server (Student-created API)**        | API endpoint(s) are functional, returning relevant processed data in a consumable format (JSON).        | 15         |
+| **API Integration**                         | External API integration is successfully implemented and data is processed and displayed meaningfully. | 10         |
+| **API Server (Student-created API)**        | API endpoint(s) are functional, returning relevant processed data in a consumable format (JSON).        | 10         |
 | **Responsiveness and Accessibility**        | The portfolio is fully responsive and works well on different devices. Accessibility best practices followed. | 10    |
 | **Code Quality and Documentation**          | Clean, readable code with comments and clear structure. Proper file organization.                       | 10         |
 | **Bonus: Blog or Additional Features**      | Extra pages or features that enhance the portfolio's value (optional).                                 | 5          |

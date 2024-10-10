@@ -13,17 +13,17 @@ const AboutMe = () => {
     };
 
     const gridContent = [
-        {label: 'Localisation', content: 'Montréal, Canada', img: <LocationOnIcon style={{ fontSize: 24 }} />}, // Icono de 24px
-        {label: 'Occupation', content: 'Programmeur-analyste', img: <WorkIcon style={{ fontSize: 24 }} />}, // Icono de 24px
-        {label: 'LinkedIn', content: <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">Mon profil LinkedIn</a>, img: <LinkedInIcon style={{ fontSize: 24, color: '#0A66C2' }} />}, // Icono de 24px
-        {label: 'Courriel', content: mailTo(), img: <EmailIcon style={{ fontSize: 24 }} />}, // Icono de 24px
+        {label: 'Localisation', content: 'Montréal, Canada', img: <LocationOnIcon className="accueilSectionIcon" />}, // Icono con clase
+        {label: 'Occupation', content: 'Programmeur-analyste', img: <WorkIcon className="accueilSectionIcon" />}, // Icono con clase
+        {label: 'LinkedIn', content: <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">Mon profil LinkedIn</a>, img: <LinkedInIcon className="accueilSectionIcon" style={{ color: '#0A66C2' }} />}, // Icono con color de LinkedIn
+        {label: 'Courriel', content: mailTo(), img: <EmailIcon className="accueilSectionIcon" />}, // Icono con clase
     ];
 
     return (
         <>
-            <div className="gridHome">
+            <div className="gridHome centeredPanel">
                 {gridContent.map((gridElement, index) => (
-                    <div key={index} className="gridHomeElement">
+                    <div key={index} className="gridHomeElement accueilSection">
                         <div>
                             {gridElement.img}
                             <div>
@@ -33,8 +33,8 @@ const AboutMe = () => {
                     </div>
                 ))}
             </div>
-            <div className="justifiedText">
-                <h3>Salut !</h3> {/* Cambiado el título a "À propos de moi" */}
+            <div className="justifiedText largerText accueilSection">
+                <h3>Salut !</h3>
                 <p>Je m'appelle Jorge Flores, et je suis un programmeur-analyste diplômé du Collège LaSalle à Montréal, Canada. Je suis passionné par le développement de solutions numériques et j'ai une solide expérience dans la gestion, la comptabilité, et le développement web.</p>
                 <p>Mon parcours m'a permis d'acquérir des compétences en développement frontend et backend, notamment en HTML, CSS, JavaScript, React, Node.js et SQL. J'aime également travailler avec des outils tels que Power BI pour l'analyse des données.</p>
                 <p>Tout au long de ma carrière, j'ai démontré ma capacité à travailler efficacement en équipe, à gérer des projets complexes et à proposer des solutions créatives. Mon objectif est de continuer à apprendre et à contribuer à des projets innovants.</p>
@@ -80,7 +80,7 @@ const AboutMe = () => {
                 </table>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default AboutMe;

@@ -8,6 +8,6 @@ export const socialsData = [
     { text: "GitHub", icon: <GitHub className="socialImg" />, link: "https://github.com/jorgejfp" },
     { text: "LinkedIn", icon: <Linkedin className="socialImg" />, link: "https://www.linkedin.com/in/jjfp" },
     { text: "ORCID", icon: <Orcid className="socialImg" />, link: "https://orcid.org/0000-0002-1140-8074" },
-    { text: "Docker Hub", icon: <Docker className="socialImg" />, link: "https://hub.docker.com/u/jorgejfp" },
-    { text: "WhatsApp", icon: <WhatsApp className="socialImg" />, link: `https://wa.me/+15147261846` } // Enlace directo a WhatsApp
+    /*{ text: "Docker Hub", icon: <Docker className="socialImg" />, link: "https://hub.docker.com/u/jorgejfp" },
+    { text: "WhatsApp", icon: <WhatsApp className="socialImg" />, link: `https://wa.me/+15147261846` } // Enlace directo a WhatsApp*/
 ];

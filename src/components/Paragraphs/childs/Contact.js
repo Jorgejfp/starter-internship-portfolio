@@ -36,7 +36,6 @@ const Contact = () => {
                     </button>
                 </div>
             </div>
-
             <label>Réseaux sociaux</label>
             <div className="socials-section">
                 <a href="https://github.com/jorgejfp" target="_blank" rel="noopener noreferrer" className="social-link">
@@ -55,10 +54,10 @@ const Contact = () => {
                     <DockerLogo className="social-icon" />
                     <p className="social-text">Docker Hub</p>
                 </a>
-                <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="social-link">
+                {/*<a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="social-link">
                     <WhatsAppLogo className="social-icon" />
                     <p className="social-text">WhatsApp</p>
-                </a>
+                </a>*/}
             </div>
         </div>
     );

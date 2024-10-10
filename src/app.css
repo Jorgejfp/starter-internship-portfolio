@@ -39,6 +39,466 @@
 
 .paragraph .justifiedText {
     text-align: center;
+    font-size: 1.2rem;
+
+}
+
+/* General responsive adjustments for images and SVGs */
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*Navbar.css*/
+
+.containerNavbar {
+    width: 7%;
+    transition: width 0.3s ease;
+    transition-duration: 1s;
+    max-width: 17%;
+    height: 100%;
+    background: #27ae60;
+    padding: 30px 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+    flex-flow: column wrap;
+}
+
+.containerNavbar:hover {
+    width: 17%;
+}
+
+.navbar {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+}
+
+.containerNavbar .navbar {
+    width: inherit;
+    height: 100%;
+    background: #27ae60;
+    padding: 30px 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.containerNavbar:hover .mypic {
+    height: 200px;
+}
+
+.containerNavbar .navbar h1 {
+    font-size: 0.8rem;
+    padding: 10px;
+    transition: all 0.3s ease;
+    transition-duration: 1s;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containerNavbar:hover .navbar h1 {
+    padding-top: 25px;
+    font-size: 1.8rem;
+}
+
+.containerNavbar .navbar h3 {
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-duration: 1s;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0.5rem;
+    padding-bottom: 20px;
+}
+
+.containerNavbar:hover .navbar h3 {
+    opacity: 1;
+    font-size: 1.17rem;
+}
+
+.containerNavbar .navbar .desktopMenu {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.containerNavbar .navbar .desktopMenu .desktopMenuListItem {
+    padding: 20px 15px;
+    margin: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /*display: flex;*/
+    align-content: center;
+    cursor: pointer;
+}
+
+.containerNavbar .navbar .desktopMenu .desktopMenuListItem:hover {
+    background-color: #7ab887;
+    transform: translateY(-2px) translateX(-2px);
+}
+
+.containerNavbar .navbar .desktopMenu .desktopMenuListItem.active {
+    background-color: #7ab887;
+    transform: translateY(-2px) translateX(-2px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+}
+
+
+.containerNavbar .navbar .desktopMenu .desktopMenuListItem a {
+    color: #fff;
+    display: block;
+    width: 50px;
+}
+
+.containerNavbar .navbar .desktopMenu .desktopMenuListItem:hover a {
+    color: ivory;
+}
+
+.containerNavbar .desktopMenuListItem .menuLinkWrapper {
+    display: flex;
+}
+
+.containerNavbar .desktopMenuListItem .menuLinkWrapper .desktopMenuListItemText {
+    margin-left: 10px;
+    align-self: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-duration: 1s;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0;
+}
+
+.containerNavbar:hover .desktopMenuListItem .menuLinkWrapper .desktopMenuListItemText {
+    margin-left: 50px;
+    opacity: 1;
+    font-size: 1.17rem;
+}
+
+.containerNavbar .navbar .social_media {
+    display: flex;
+}
+
+.containerNavbar .navbar .social_media a {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0 5px 40px 0;
+    transition: all 0.3s ease;
+    transition-duration: 1s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgb(30, 48, 80);
+}
+
+.containerNavbar:hover .navbar .social_media a {
+    margin: 0 15px 40px 0;
+    cursor: pointer;
+}
+
+.containerNavbar .navbar .social_media a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(30, 48, 80);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
+.containerNavbar .navbar .social_media a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*Single Elements*/
+
+.desktopListImg {
+    width: 25px;
+    height: 25px;
+}
+
+.socialImg {
+    width: 20px;
+    height: 20px;
+}
+
+.bordersRules {
+    border-radius: 8px;
+    border: 0;
+    box-shadow: rgba(255, 235, 205, .5) 0 -1px 3px 0 inset, rgba(0, 44, 97, .1) 0 3px 6px 0;
+}
+
+.mypic {
+    height: 110px;
+    object-fit: cover;
+    transition: height 0.3s ease;
+    transition-duration: 1s;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #b8877a;
+}
+
+
+/*Paragraphs.css*/
+
+
+.containerParagraphs {
+    width: 100%;
+    max-width: 85%;
+    margin-left: 15%;
+    padding: 50px 80px 50px 80px;
+    height: 100%;
+    max-height: 85%;
+}
+
+.paragraphs {
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.containerParagraph {
+    display: inherit;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.paragraph {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+.containerParagraph:nth-child(even) .paragraph {
+    justify-self: left;
+    background-color: #7ab887;
+}
+
+.containerParagraph:nth-child(odd) .paragraph {
+    background-color: #7ab887;
+    justify-self: right;
+}
+
+.containerParagraph:nth-child(odd) .paragraph p, .containerParagraph:nth-child(even) .paragraph p {
+
+    padding: 5px 0;
+}
+
+.containerParagraph:nth-child(even) .paragraph h1, .containerParagraph:nth-child(odd) .paragraph h1 {
+    top: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*About.css*/
+
+.gridAbout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 90%;
+}
+
+.gridAbout > *:nth-last-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+.categorySection {
+    padding: 20px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    background: #ffa051;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+
+}
+
+.categoryTitle {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.progressContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.spanWrapper {
+    flex-direction: row;
+}
+
+.myProgress {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 0 10px;
+    height: 10px;
+    width: 90%;
+}
+
+.myBar {
+    height: 100%;
+    background-color: #7ab887;
+    border-radius: 3px;
+    transition: width 0.5s;
+    border-right: 1px solid black;
+}
+
+
+/*Contact.css*/
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: 80%;
+    width: 100%;
+}
+
+.contact label {
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+
+}
+
+.email-section, .socials-section, .support-section {
+    display: inherit;
+    width: 100%;
+    padding: 20px;
+    background-color: cadetblue;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+    justify-content: space-evenly;
+}
+
+.email-section, .socials-section, .email-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.support-section {
+    flex-direction: column;
+}
+
+.support-section > div {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+
+.email-section input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.email-section button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.email-section button {
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 100%;
+}
+
+.email-section button:hover {
+    background-color: #45a049;
+}
+
+.email-section a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(30, 48, 80);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.email-container:hover a::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.email-section a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.email-section a {
+    position: relative;
+}
+
+@keyframes fadeOutRight {
+    0% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+.email-section p {
+    position: relative;
+}
+
+.email-section p::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
 }
 
 /* General responsive adjustments for images and SVGs */
@@ -282,7 +742,7 @@ img, svg {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 70%;
+    width: 100%;
     min-height: calc(100vh - 100px);
     padding: 20px 40px;
     background-color: #fff;
@@ -507,8 +967,8 @@ img, svg {
 }
 
 .socials-section a {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 0%;
+    max-width: 20%;
     box-sizing: border-box;
 }
 
@@ -522,8 +982,8 @@ img, svg {
 }
 
 .socials-section a svg, .support-section a svg {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
 }
 
 .socials-section a:hover, .support-section a:hover {
@@ -531,7 +991,7 @@ img, svg {
 }
 
 .socials-section a:hover svg, .support-section a:hover svg {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 
@@ -1506,4 +1966,94 @@ h4 {
     .foot {
         font-size: 16px;
     }
+}
+
+.languages-container {
+    margin-top: 15px;
+}
+
+.language-bar-container {
+    margin-bottom: 10px;
+    background-color: #e1e4e8;
+    border-radius: 10px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.language-bar {
+    background-color: #28a745;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.language-bar span {
+    white-space: nowrap;
+}
+
+/* Contenedor principal de botones y lenguajes */
+.project-buttons-languages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Botones como el de GitHub */
+.project-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #f3f3f3;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.project-buttons a:hover {
+    background-color: #e3e3e3;
+}
+
+/* Contenedor de lenguajes con barras de progreso */
+.languages-container {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.language-bar-group {
+    display: flex;
+    height: 12px;
+    margin-bottom: 10px;
+    background-color: #e1e4e8; /* Fondo base */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.language-bar {
+    height: 100%;
+}
+
+.language-legend {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.language-legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
 }

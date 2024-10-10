@@ -1,14 +1,39 @@
-# CV en Ligne - Jorge Flores Perez
+# Jorge Flores Portfolio
+Visit my portfolio: www.florsal.com
 
-Ce projet est un site web personnel présentant mon curriculum vitae. Il a été construit en utilisant HTML, CSS, Bootstrap, et JavaScript.
+## Overview
 
-## Caractéristiques
-- Navigation claire avec une barre de navigation.
-- Sections pour le profil, la formation, l'expérience, les compétences, le portefeuille, et les informations de contact.
-- Design responsive avec Bootstrap pour une apparence agréable sur tous les appareils.
+My portfolio is a reflection of my journey as a web developer, showcasing my skills, projects, and professional experience. Built using React, CSS, and JavaScript, this platform allows visitors to explore my work and get to know more about me.
 
-## Voir le site
-Pour voir le site, visitez le lien suivant: [Mon CV en ligne](https://github.com/jjfp/cv)
+## Features
+Responsive Design: My portfolio is optimized for all screen sizes, ensuring a smooth experience across mobile, tablet, and desktop devices.
+Interactive Navigation: With an intuitive navigation bar and detailed sections for each part of my professional journey, users can easily browse through the site.
 
-## Auteur
-Jorge Flores Perez - [Mon LinkedIn](https://www.linkedin.com/in/jjfp)
+## Projects: 
+A showcase of my best projects, with details on the technologies used and links to the repositories or live versions.
+Contact Information: Get in touch with me through an interactive contact form or directly via email and social media links.
+Technologies Used
+Frontend: React, HTML5, CSS3
+Backend: Node.js, Express
+Database: MongoDB
+Styling: Bootstrap, Custom CSS
+Other Tools: Git, Webpack
+Getting Started
+## Prerequisites
+Node.js
+NPM or Yarn
+Installation
+Clone the repository:
+bash
+## Copy code
+git clone https://github.com/jorgejfp/portfolio2
+
+## Pages and API Integration
+Homepage: An introduction to my background and skills.
+Projects: Detailed pages showcasing my work, with direct links to repositories and live versions.
+Skills/Experience: A breakdown of my technical skills and work experience.
+Contact Page: A contact form with proper validation, integrated with external services for social media links and GitHub.
+Blog (Optional): A section where I write articles about my learning journey and projects.
+API Integration:
+The website integrates an external API (e.g. GitHub API) to fetch and display dynamic data.
+I also provide my own API endpoint for sharing project data in JSON format.

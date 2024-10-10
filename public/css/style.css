@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+}
+
+
+
+.root {
+    display: flex;
+    width: 100%;
+}
+
+/*html, body, #app, #app>div {*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*}*/
+/* Estilos para la sección de redes sociales */
+.socials-section {
+    display: flex;
+    justify-content: space-around; /* Asegura que los iconos estén distribuidos uniformemente */
+    align-items: center; /* Alinea los iconos verticalmente */
+    flex-wrap: nowrap; /* Evita que los iconos se envuelvan a una nueva línea */
+    margin-top: 20px;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 1000px; /* Puedes ajustar este valor para restringir el ancho */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    padding: 10px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 20px; /* Añade un margen lateral a cada icono */
+}
+
+.social-icon {
+    width: 48px; /* Tamaño del icono */
+    height: 48px; /* Tamaño del icono */
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de hover */
+}
+
+.social-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #259149;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody td:last-child {
+    text-align: center;
+}
+
+.justifiedText h2 {
+    margin-top: 40px;
+}
+
+.justifiedText p {
+    margin-bottom: 20px;
+}

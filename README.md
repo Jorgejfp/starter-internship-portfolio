@@ -1,5 +1,6 @@
 # Jorge Flores Portfolio
-![Descripción de la Imagen](https://github.com/Jorgejfp/starter-internship-portfolio/blob/main/image.png)
+![Descripción de la Imagen](https://github.com/Jorgejfp/starter-internship-portfolio/blob/main/image.png?raw=true)
+
 Visit my portfolio: www.florsal.com
 
 ## Overview
